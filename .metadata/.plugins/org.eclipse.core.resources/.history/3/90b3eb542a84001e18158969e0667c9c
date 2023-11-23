@@ -1,0 +1,18 @@
+package praktikum5;
+import java.util.Scanner;
+
+public class Test {
+	public static void main(String[]args) {
+		String namaKucing;
+		Scanner input = new Scanner(System.in);
+		System.out.print("Masukan Nama Kucing : ");
+		namaKucing = input.next();
+		
+		Cat kucingsaya = new Cat();
+		kucingsaya.identitas(namaKucing, " Putih", 2);
+		System.out.println("Kucing " + kucingsaya.name 
+				+" warnanya" +kucingsaya.ambilWarna()
+				+"\n beratnya " +kucingsaya.berat +" kg");
+		kucingsaya.eat();
+	}
+}
